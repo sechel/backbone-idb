@@ -15,7 +15,7 @@
     module.exports = factory(require('underscore'), require('backbone'), require('idb-wrapper'), 'CommonJS');
   } else if (typeof define === 'function' && define.amd) {
     // AMD - Register as an anonymous module
-    define(['underscore', 'backbone'], function(_, Backbone) {
+    define(['underscore', 'backbone', 'idb-wrapper'], function(_, Backbone, IDBStore) {
       return factory(_ || global._, Backbone || global.Backbone, IDBStore || global.IDBStore, 'AMD');
     });
   } else {
