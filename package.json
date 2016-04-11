@@ -22,7 +22,7 @@
     "sync",
     "websql"
   ],
-  "dependencies": {
+  "peerDependencies": {
     "lodash": "~2.4.1",
     "backbone": "~1.1.0",
     "idb-wrapper": "~1.4.1"
